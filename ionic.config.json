@@ -1,5 +1,7 @@
 {
   "name": "poesias-Merchan-Domenica",
-  "integrations": {},
+  "integrations": {
+    "capacitor": {}
+  },
   "type": "angular"
 }
