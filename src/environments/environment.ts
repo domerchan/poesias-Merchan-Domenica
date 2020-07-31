@@ -3,7 +3,20 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+
+    firebaseConfig: {
+      apiKey: "AIzaSyApfgslvnPKPQ_mbHGyYZknDCMNsLNlhUs",
+      authDomain: "poesia-3852c.firebaseapp.com",
+      databaseURL: "https://poesia-3852c.firebaseio.com",
+      projectId: "poesia-3852c",
+      storageBucket: "poesia-3852c.appspot.com",
+      messagingSenderId: "641803887808",
+      appId: "1:641803887808:web:550ab42ddd4b2647ea7925",
+      measurementId: "G-J693ZWT4P6"
+    },
+
+    googleWebClientId: '641803887808-k9t1enf15ccgtltamnmiqtkk41v3dav6.apps.googleusercontent.com'
 };
 
 /*
