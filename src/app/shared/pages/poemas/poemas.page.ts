@@ -19,6 +19,9 @@ export class PoemasPage implements OnInit {
 
   ngOnInit() {
     this.poemas = this.poemasService.getPoemas();
+    this.poemas.subscribe(data => {
+      console.log(data)
+    })
   }
 
   async loginGoogle() {

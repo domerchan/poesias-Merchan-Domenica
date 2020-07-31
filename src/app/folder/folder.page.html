@@ -19,8 +19,8 @@
                 <img [src]="poema.image.url">
             </ion-avatar>
             <ion-label>
-                <h2>{{poema.poema}}</h2>
-                <h3>{{poema.usuario.nombre}} {{poema.usuario.apellido}}</h3>
+                <ion-label className="ion-text-wrap">{{poema.poema}}</ion-label>
+                <h3>{{poema.usuario.displayName}}</h3>
                 <p>{{poema.comentarios}}</p>
             </ion-label>
         </ion-item>

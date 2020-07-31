@@ -1,0 +1,27 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-title>subir-poema</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-list lines="full" class="ion-no-margin ion-no-padding">
+        <ion-item>
+            <ion-label position="stacked">Ingresa tu poema
+            </ion-label>
+            <ion-textarea type="text" [(ngModel)]="poema.poema"></ion-textarea>
+        </ion-item>
+
+        <ion-item>
+            <ion-label position="stacked">O sube una imagen
+            </ion-label>
+            <app-image-upload [icon]="'camera'" [type]="'camera'" (uploadFinished)="imagenCargada($event)"></app-image-upload>
+
+            <img [src]="base64Image" />
+        </ion-item>
+    </ion-list>
+
+    <div class="ion-padding">
+        <ion-button expand="block" type="submit" (click)="subirPoema()">Subir Poema</ion-button>
+    </div>
+</ion-content>
