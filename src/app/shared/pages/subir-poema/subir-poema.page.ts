@@ -31,10 +31,15 @@ export class SubirPoemaPage implements OnInit {
   }
 
   subirPoema() {
+    const image = {
+      type: 'imagen',
+      url: 'https://labs357.com/nuevo/wp-content/themes/consultix/images/no-image-found-360x250.png'
+    }
     this.poema.usuario = this.user;
     var today = new Date()
     var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
     this.poema.fecha = date
+    this.poema.image = image
     console.log(this.poema)
     this.poemasService.insertPoema(this.poema)
     this.toast('Poema subido exitosamente');
